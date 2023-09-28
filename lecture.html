@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lecture.css" />
+  <title>learning system</title>
+</head>
+<body>
+  <div class="nav">
+   <div class="elements">
+     <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+     <a href="admin.html" ><p>users</p></a>
+     <a href="#" class="active"><p>lectures</p></a>
+     <a href="adminAssignments.html" ><p>assignments</p></a>
+   </div>
+   <div>
+    <div class="guest"></div>
+    <a href="index.html">logout</a>
+   </div>
+  </div>
+  <div class="title">
+    <h2>lectures</h2>
+  </div>
+  <div class="add">
+  <p>add lectures</p>
+   <form>
+       <div>
+       <label for="title">title</label><br />
+       <select id="title">
+       <option value="Classes">classes</option>
+       <option value="Import-Export">import-export</option>
+       <option value="Local Storage">local storage</option>
+      
+       </select>
+       </div>
+       <div>
+        <label for="type">type</label><br />
+        <select id="type">
+          <option value="LIVE">Live</option>
+          <option value="VIDEO">Video</option>
+        </select>
+
+       </div>
+       <div>
+        <label for="category">category</label><br />
+        <select id="category">
+          <option value="coding">Coding</option>
+          <option value="dsa">Dsa</option>
+          <option value="scrum">Scrum</option>
+        </select>
+
+       </div>
+       <div>
+        <label for="instructor">instructor</label><br />
+        <select id="instructor">
+          <option value="Ankush">Ankush</option>
+          <option value="Bicky">Bicky</option>
+          <option value="Swannand">Swannand</option>
+        </select>
+
+       </div>
+       <div>
+      <label for="schedule">scheduled</label><br />
+      <input type="date" id="schedule" />
+
+       </div>
+       <div>
+         <label for="add">add lecture</label><br />
+         <button onclick="addLecture()" >add</button>
+       </div>
+   </form>
+  </div>
+   <div class="section">
+    <div class="lectures"></div>
+   </div>
+<script src="lecture.js"></script>
+</body>
+</html>
